@@ -1,0 +1,87 @@
+body{
+    background-color: palegoldenrod;
+    text-align: center;
+}
+
+.box{
+    background-color: aliceblue;
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;    
+    
+}
+
+.container-color {
+    border-radius: 90px;
+    border-color: darkslategrey;
+    margin: 60px;
+    height: 150px;
+    width: 150px;
+    padding: 100px;
+    background-color: skyblue;
+}
+
+.item1 {
+    color: darkblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item2 {
+    color: darkblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item3 {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item4 {
+    color: darkblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    background-color: white;
+    height: 350px;
+    width: 550px;
+}
+
+.child {
+    color: white;
+    background-color: darkred;
+    height: 175px;
+    width: 550px;
+}
+
+.parent:hover .child {
+    color: darkred;
+    animation: leftRight 3s;
+}
+
+@keyframes leftRight {
+0%{
+    transform: translateX(33%);
+}
+    33% {
+        transform: translateX(33%);
+        transform: translateY(33%);
+    }
+
+
+    67%{
+        transform: translateY(67%);
+    }
+
+    100%{
+        transform: translateY(100%);
+    }
+}
